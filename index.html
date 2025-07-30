@@ -58,6 +58,19 @@
             backdrop-filter: blur(8px);
             /* Efeito de desfoque */
         }
+        
+        .testimonial-card {
+            background-color: #F9F5FF;
+        }
+
+        /* Estilos para o carrossel com drag */
+        #carousel-wrapper {
+            cursor: grab;
+            user-select: none; /* Impede a seleção de texto durante o arraste */
+        }
+        #carousel-wrapper.dragging {
+            cursor: grabbing;
+        }
     </style>
 </head>
 
@@ -126,6 +139,135 @@
             </div>
         </section>
 
+        <!-- Seção de Depoimentos -->
+        <section class="py-16 sm:py-20">
+            <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-16 text-gray-800">+3.000 PACIENTES ATENDIDOS COM EXCELÊNCIA</h2>
+                <div class="relative">
+                    <!-- Wrapper do Carrossel -->
+                    <div id="carousel-wrapper" class="overflow-hidden">
+                        <div id="carousel-inner" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Slide 1 -->
+                            <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-2">
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 1</h3>
+                                    <p class="text-gray-600">"Em Uma Tarde Nublada De Terça-Feira, Um Gato Chamado Tobias Decidiu Que Era Hora De Explorar Além Do Quintal. Com Seu Chapéu Imaginário De Explorador Ele Partiu Em"</p>
+                                </div>
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 2</h3>
+                                    <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                                </div>
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 3</h3>
+                                    <p class="text-gray-600">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-2">
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 4</h3>
+                                    <p class="text-gray-600">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."</p>
+                                </div>
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 5</h3>
+                                    <p class="text-gray-600">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet."</p>
+                                </div>
+                                <div class="testimonial-card p-8 rounded-2xl shadow-sm">
+                                    <h3 class="font-bold text-xl mb-4 text-gray-900">Nome Do Cliente 6</h3>
+                                    <p class="text-gray-600">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paginação -->
+                    <div id="carousel-dots" class="flex justify-center mt-8 space-x-3">
+                        <!-- Dots serão gerados via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Procedimentos -->
+        <section class="py-16 sm:py-20">
+            <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-16 text-gray-800">PROCEDIMENTOS</h2>
+                <div id="procedures-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Procedimento 1 -->
+                    <div class="text-center p-6">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4H7zm0 0L7 5m3 16V5m0 16a4 4 0 004 4h4a2 2 0 002-2V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4zm0 0l0-16m4 4h.01"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">BOTOX</h3>
+                        <p class="text-gray-600">É um procedimento estético que utiliza injeções da toxina botulínica para reduzir temporariamente rugas e linhas de expressão.</p>
+                    </div>
+                    <!-- Procedimento 2 -->
+                    <div class="text-center p-6">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V14m0-2.5c-.93-2.43.14-5.22 2.5-6.36C11.26 4.4 13.74 5.1 15 6.64c1.26 1.54 1.26 3.76 0 5.3-1.26 1.54-3.74 2.24-5.5 1.56-1.76-.68-2.59-3.13-2.5-5.2zM15 9.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path><text x="12" y="19" font-family="Montserrat" font-size="4" font-weight="bold" text-anchor="middle" fill="currentColor">O₃</text></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">OZONIOTERAPIA</h3>
+                        <p class="text-gray-600">A ozonioterapia é um procedimento que envolve a aplicação controlada de ozônio medicinal para tratar diversas condições de saúde.</p>
+                    </div>
+                    <!-- Procedimento 3 -->
+                    <div class="text-center p-6">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17.5l-1.5-1.5M12 21l-1.5-1.5M15 17.5l1.5-1.5M9 6.5l1.5 1.5M12 3l1.5 1.5M15 6.5l-1.5 1.5M12 12l1.5 1.5L15 12l-1.5-1.5L12 12zM3 12h3m12 0h3M7.5 15l-1.5 1.5M16.5 15l1.5 1.5M7.5 9l-1.5-1.5M16.5 9l1.5-1.5"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">ENZIMAS</h3>
+                        <p class="text-gray-600">É um procedimento estético não invasivo: a aplicação de injeções contendo substâncias como vitaminas, minerais e aminoácidos.</p>
+                    </div>
+                    <!-- Procedimentos Ocultos -->
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.22,14.22c-1.63-1.63-1.63-4.26,0-5.89,1.63-1.63,4.26-1.63,5.89,0l1.41,1.41,1.41-1.41c1.63-1.63,4.26-1.63,5.89,0,1.63,1.63,1.63,4.26,0,5.89l-7.3,7.3-7.3-7.3Z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12,22V12"/></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">PEELING QUÍMICO</h3>
+                        <p class="text-gray-600">Tratamento que utiliza ácidos para remover camadas da pele, promovendo a renovação celular e melhorando a textura e aparência.</p>
+                    </div>
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a3 3 0 00-3 3v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V5a3 3 0 00-3-3zM9 10v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V10m-6 3v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V13m-6 3v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V16m-6 3v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V19"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">MICROAGULHAMENTO</h3>
+                        <p class="text-gray-600">Técnica que utiliza microagulhas para estimular a produção de colágeno, tratando cicatrizes, estrias e rejuvenescimento da pele.</p>
+                    </div>
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                           <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.5 3.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM8.5 20.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM18.5 20.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM8 12h8m-8 3h8m-8-6h8"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.5 8.5v-2a1 1 0 011-1h11a1 1 0 011 1v2a4 4 0 01-4 4h-5a4 4 0 01-4-4z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">LIMPEZA DE PELE</h3>
+                        <p class="text-gray-600">Procedimento para remover cravos, impurezas, células mortas e milium da pele, deixando-a com um aspecto mais saudável e limpo.</p>
+                    </div>
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 5v2m0 10v2m5-7h-2M7 12H5"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">BIOESTIMULADORES</h3>
+                        <p class="text-gray-600">Substâncias injetáveis que estimulam a produção natural de colágeno, melhorando a firmeza e a qualidade da pele a longo prazo.</p>
+                    </div>
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16M4 12l4-4m-4 4l4 4m8-8l4 4m-4-4l4-4"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">FIOS DE SUSTENTAÇÃO</h3>
+                        <p class="text-gray-600">Técnica de lifting facial não cirúrgico que utiliza fios absorvíveis para tracionar e reposicionar a pele, combatendo a flacidez.</p>
+                    </div>
+                    <div class="hidden-procedure text-center p-6 hidden">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h3M4.5 6.5l1.5 1.5M8 4v3m3-2.5l-1.5 1.5M21 10h-3m-1.5-3.5l-1.5 1.5M16 4v3m-1-2.5l1.5 1.5M12 14c-3.87 0-7 3.13-7 7h14c0-3.87-3.13-7-7-7z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">PREENCHIMENTO</h3>
+                        <p class="text-gray-600">Aplicação de substâncias, como o ácido hialurônico, para repor volume, suavizar sulcos e melhorar o contorno facial e labial.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <button id="toggle-procedures-btn" class="custom-purple-button text-white font-semibold py-3 px-10 rounded-lg shadow-md text-lg">
+                        SAIBA MAIS
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <!-- Seção do Mapa -->
         <section id="agendar" class="py-16 sm:py-20">
             <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
@@ -170,6 +312,110 @@
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
         </svg>
     </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lógica do Carrossel de Depoimentos
+            const carouselWrapper = document.getElementById('carousel-wrapper');
+            if (carouselWrapper) {
+                const carousel = document.getElementById('carousel-inner');
+                const dotsContainer = document.getElementById('carousel-dots');
+                const slides = carousel.children;
+                const totalSlides = slides.length;
+                let currentIndex = 0;
+
+                for (let i = 0; i < totalSlides; i++) {
+                    const dot = document.createElement('button');
+                    dot.classList.add('w-3', 'h-3', 'rounded-full', 'transition-colors', 'duration-300');
+                    dot.classList.add(i === 0 ? 'bg-gray-800' : 'bg-gray-400');
+                    dot.addEventListener('click', () => goToSlide(i));
+                    dotsContainer.appendChild(dot);
+                }
+                const dots = dotsContainer.children;
+
+                function goToSlide(index) {
+                    if (index < 0) index = 0;
+                    if (index >= totalSlides) index = totalSlides - 1;
+
+                    currentIndex = index;
+                    const offset = -currentIndex * 100;
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                    carousel.style.transform = `translateX(${offset}%)`;
+
+                    for (let i = 0; i < dots.length; i++) {
+                        dots[i].classList.toggle('bg-gray-800', i === currentIndex);
+                        dots[i].classList.toggle('bg-gray-400', i !== currentIndex);
+                    }
+                }
+
+                let isDragging = false;
+                let startPos = 0;
+                let currentTranslate = 0;
+                let prevTranslate = 0;
+
+                function getPositionX(event) {
+                    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+                }
+
+                function startDrag(event) {
+                    isDragging = true;
+                    startPos = getPositionX(event);
+                    carouselWrapper.classList.add('dragging');
+                    carousel.style.transition = 'none';
+                    prevTranslate = -currentIndex * carouselWrapper.offsetWidth;
+                }
+
+                function drag(event) {
+                    if (!isDragging) return;
+                    const currentPosition = getPositionX(event);
+                    currentTranslate = prevTranslate + currentPosition - startPos;
+                    carousel.style.transform = `translateX(${currentTranslate}px)`;
+                }
+
+                function endDrag() {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    carouselWrapper.classList.remove('dragging');
+                    const movedBy = currentTranslate - prevTranslate;
+                    const slideWidth = carouselWrapper.offsetWidth;
+
+                    if (movedBy < -slideWidth * 0.2 && currentIndex < totalSlides - 1) {
+                        currentIndex++;
+                    }
+                    if (movedBy > slideWidth * 0.2 && currentIndex > 0) {
+                        currentIndex--;
+                    }
+                    goToSlide(currentIndex);
+                }
+
+                carouselWrapper.addEventListener('mousedown', startDrag);
+                carouselWrapper.addEventListener('mouseup', endDrag);
+                carouselWrapper.addEventListener('mouseleave', () => { if (isDragging) endDrag(); });
+                carouselWrapper.addEventListener('mousemove', drag);
+                carouselWrapper.addEventListener('touchstart', startDrag, { passive: true });
+                carouselWrapper.addEventListener('touchend', endDrag);
+                carouselWrapper.addEventListener('touchmove', drag, { passive: true });
+                carouselWrapper.querySelectorAll('img, a').forEach(el => {
+                    el.addEventListener('dragstart', (e) => e.preventDefault());
+                });
+            }
+
+            // Lógica para Mostrar/Ocultar Procedimentos
+            const toggleBtn = document.getElementById('toggle-procedures-btn');
+            const hiddenProcedures = document.querySelectorAll('.hidden-procedure');
+            let areProceduresVisible = false;
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    areProceduresVisible = !areProceduresVisible;
+                    hiddenProcedures.forEach(proc => {
+                        proc.classList.toggle('hidden', !areProceduresVisible);
+                    });
+                    toggleBtn.textContent = areProceduresVisible ? 'VER MENOS' : 'SAIBA MAIS';
+                });
+            }
+        });
+    </script>
 
 </body>
 
